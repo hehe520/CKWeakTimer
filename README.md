@@ -1,6 +1,6 @@
 # CKWeakTimer
 
-不会发生循环引用的 timer
+不会发生循环引用的 timer，不对 controller 强引用，controller 退出，自动关闭释放，甚至 timer 的 block 内可以写 self，都能释放。
 
 # 使用方法
 
